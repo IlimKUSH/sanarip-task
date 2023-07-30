@@ -10,9 +10,7 @@ const Routes: FC = () => {
 function App() {
   return (
     <BrowserRouter>
-      <div style={{ background: '#EBEBF0' }}>
-        <Routes />
-      </div>
+      <Routes />
     </BrowserRouter>
   )
 }

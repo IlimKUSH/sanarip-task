@@ -1,0 +1,28 @@
+.header {
+  height: 60px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+.navbar {
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  color: #909090;
+  transition: .2s ease-in-out;
+
+  &:hover {
+    color: #63a8c9;
+  }
+
+  &.active {
+    color: #63a8c9;
+  }
+}
