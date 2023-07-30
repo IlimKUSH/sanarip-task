@@ -42,13 +42,17 @@ export const UsersList: FC = observer(() => {
             </tr>
           </thead>
           <tbody>
-            {filteredUsers?.map((user) => (
+            {filteredUsers?.length ? filteredUsers?.map((user) => (
               <tr key={user.id}>
                 <td>{user.name}</td>
                 <td>{user.email}</td>
                 <td>{user.address.city}</td>
               </tr>
-            ))}
+            )) : (
+              <tr>
+                <td colSpan={3}>Нет данных</td>
+              </tr>
+              )}
           </tbody>
         </table>
       )}

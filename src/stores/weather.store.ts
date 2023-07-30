@@ -4,12 +4,13 @@ import { BackendRoutes } from '../routes/backend.routes'
 import { IWeather } from '../models/entities'
 import { IRootStore } from '../models/stores/root.store'
 import { IWeatherStore } from '../models/stores/weather.store'
+import { City } from '../constants';
 
 export class WeatherStore implements IWeatherStore {
   public readonly rootStore: IRootStore
 
   public data: null | IWeather = null
-  public city = 'Bishkek'
+  public city = City
   public loading = true
   public error?: string = undefined
 
